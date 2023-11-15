@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паспортный стол</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-1">
+    <div class="container">
+        <a href="http://127.0.0.1:3000/main.html"> <img src="pasport-2.png" alt="image description" class="image">
+        </a>
+        <h1 class="title">Паспортный стол</h1>
+        <div class="buttons">
+            <a href="http://127.0.0.1:3000/reg.html"> <button class="button">Личный кабинет</button> </a>
+            <a href="http://127.0.0.1:3000/auth.html"> <button class="button">Выход</button> </a>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="btn">Расписание</button> 
+        <button class="btn"> Персонал</button>
+    </div>
+    <table>
+        <tr>
+           <th>#</th>
+           <th>Время</th>
+           <th>Услуга</th>
+        </tr>
+        <tr>
+           <td>Сотрудник <div id="list-popup" style="display: none; width: 100%; padding: 10px; box-sizing: border-box; background-color: #f2f2f2; border: 1px solid #ccc;"> <ul style="list-style-type: none; padding: 0; margin: 0;"> <li><a href="#">Иванов</a></li> <li><a href="#">Петров</a></li> <li><a href="#">Семенов</a></li> </ul> </div>
+            <button id="popup-button">Выбрать сотрудника</button>
+            
+            <script> const listPopup = document.getElementById('list-popup'); const popupButton = document.getElementById('popup-button'); popupButton.addEventListener('click', () => { listPopup.style.display = listPopup.style.display === 'none' ? 'block' : 'none'; }); </script></td></td>
+           <td><h2>Дата</h2> <div id="calendar-popup" style="display: none; width: 250px; padding: 10px; box-sizing: border-box; background-color: #f2f2f2; border: 1px solid #ccc;"> <img src="https://via.placeholder.com/250" alt="Calendar" /> </div>
+            <button id="calendar-button">Выбор</button>
+            
+            <script> const calendarPopup = document.getElementById('calendar-popup'); const calendarButton = document.getElementById('calendar-button'); calendarButton.addEventListener('click', () => { calendarPopup.style.display = calendarPopup.style.display === 'none' ? 'block' : 'none'; }); </script>
+           <td><div id="list-popup" style="display: none; width: 100%; padding: 10px; box-sizing: border-box; background-color: #f2f2f2; border: 1px solid #ccc;"> <ul style="list-style-type: none; padding: 0; margin: 0;"> <li><a href="#">Получение паспорта</a></li> <li><a href="#">Замена паспорта</a></li> <li><a href="#">Получение загранпаспорта</a></li> <li><a href="#">Замена загранпаспорта</a></li></ul> </div>
+            <button id="popup-button">Выбор Услуги</button>
+            
+            <script> const listPopup = document.getElementById('list-popup'); const popupButton = document.getElementById('popup-button'); popupButton.addEventListener('click', () => { listPopup.style.display = listPopup.style.display === 'none' ? 'block' : 'none'; }); </script></td></td></td>
+        </tr>
+        <tr>
+           <td>Сотрудник <div id="list-popup" style="display: none; width: 100%; padding: 10px; box-sizing: border-box; background-color: #f2f2f2; border: 1px solid #ccc;"> <ul style="list-style-type: none; padding: 0; margin: 0;"> <li><a href="#">Иванов</a></li> <li><a href="#">Петров</a></li> <li><a href="#">Семенов</a></li> </ul> </div>
+            <button id="popup-button">Выбрать сотрудника</button>
+            
+            <script> const listPopup = document.getElementById('list-popup'); const popupButton = document.getElementById('popup-button'); popupButton.addEventListener('click', () => { listPopup.style.display = listPopup.style.display === 'none' ? 'block' : 'none'; }); </script></td></td>
+           <td><h2>Дата</h2> <div id="calendar-popup" style="display: none; width: 250px; padding: 10px; box-sizing: border-box; background-color: #f2f2f2; border: 1px solid #ccc;"> <img src="https://via.placeholder.com/250" alt="Calendar" /> </div>
+            <button id="calendar-button">Выбор</button>
+            
+            <script> const calendarPopup = document.getElementById('calendar-popup'); const calendarButton = document.getElementById('calendar-button'); calendarButton.addEventListener('click', () => { calendarPopup.style.display = calendarPopup.style.display === 'none' ? 'block' : 'none'; }); </script></td>
+           <td><div id="list-popup" style="display: none; width: 100%; padding: 10px; box-sizing: border-box; background-color: #f2f2f2; border: 1px solid #ccc;"> <ul style="list-style-type: none; padding: 0; margin: 0;"> <li><a href="#">Получение паспорта</a></li> <li><a href="#">Замена паспорта</a></li> <li><a href="#">Получение загранпаспорта</a></li> <li><a href="#">Замена загранпаспорта</a></li></ul> </div>
+            <button id="popup-button">Выбор Услуги</button>
+            
+            <script> const listPopup = document.getElementById('list-popup'); const popupButton = document.getElementById('popup-button'); popupButton.addEventListener('click', () => { listPopup.style.display = listPopup.style.display === 'none' ? 'block' : 'none'; }); </script></td></td>
+        </tr>
+       </table>
+</body>
